@@ -5,7 +5,7 @@ import sys
 from methods import print_error
 
 
-libname = "EXTENSION-NAME"
+libname = "RYAN-EXTENSION"
 projectdir = "demo"
 
 localEnv = Environment(tools=["default"], PLATFORM="")

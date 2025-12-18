@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/cpp-template/out/build/x64-Debug/cmake_install.cmake",
+		"C:/cpp-template/out/build/x64-Debug/godot-cpp/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

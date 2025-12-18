@@ -1,0 +1,13 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "dll",
+      "exe": "",
+      "project": "CMakeLists.txt",
+      "projectTarget": "EXTENSION-NAME.windows.template_debug.x86_64.dll (C:\\cpp-template\\bin\\windows\\EXTENSION-NAME.windows.template_debug.x86_64.dll)",
+      "name": "EXTENSION-NAME.windows.template_debug.x86_64.dll (C:\\cpp-template\\bin\\windows\\EXTENSION-NAME.windows.template_debug.x86_64.dll)"
+    }
+  ]
+}
