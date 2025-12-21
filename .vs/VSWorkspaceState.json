@@ -9,8 +9,8 @@
     "",
     "\\demo",
     "\\demo\\bin",
+    "\\demo\\bin\\windows",
     "\\src"
   ],
-  "SelectedNode": "\\demo\\bin\\ryan.gdextension",
   "PreviewInSolutionExplorer": false
 }

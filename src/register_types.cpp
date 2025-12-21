@@ -1,5 +1,7 @@
 #include "register_types.h"
 
+#include "hover_sprite.h"
+
 #include <gdextension_interface.h>
 #include <godot_cpp/core/class_db.hpp>
 #include <godot_cpp/core/defs.hpp>
@@ -15,6 +17,7 @@ void initialize_gdextension_types(ModuleInitializationLevel p_level)
 		return;
 	}
 	GDREGISTER_CLASS(ExampleClass);
+	GDREGISTER_RUNTIME_CLASS(GDHover); // RUNTIME makes code run only in game, like GDScript
 }
 
 void uninitialize_gdextension_types(ModuleInitializationLevel p_level) {

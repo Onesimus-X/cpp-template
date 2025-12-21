@@ -4939,3 +4939,9 @@
 50146	51125	7877973135953815	bin/libgodot-cpp.windows.template_debug.x86_64.lib	6449a4223c41e5e7
 51127	51697	7877973150306052	C:/cpp-template/bin/windows/EXTENSION-NAME.windows.template_debug.x86_64.dll	cbf6532237df485d
 51127	51697	7877973150306052	EXTENSION-NAME.windows.template_debug.x86_64.lib	cbf6532237df485d
+200	227	7879902849331533	C:/cpp-template/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	48fa1ef0b745a664
+171	189	7879920328722158	C:/cpp-template/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	48fa1ef0b745a664
+310	1346	7879920330158249	CMakeFiles/EXTENSION-NAME.dir/src/register_types.cpp.obj	4d1afa7a263e1f06
+183	200	7879943948275800	C:/cpp-template/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	48fa1ef0b745a664
+322	1327	7879943949714324	CMakeFiles/EXTENSION-NAME.dir/src/register_types.cpp.obj	4d1afa7a263e1f06
+179	197	7879946349156702	C:/cpp-template/out/build/x64-Debug/CMakeFiles/cmake.verify_globs	48fa1ef0b745a664
