@@ -10,14 +10,21 @@ void GDHover::_bind_methods() {
 	ClassDB::bind_method(D_METHOD("get_speed"), &GDHover::get_speed);
 	ClassDB::bind_method(D_METHOD("set_speed", "p_speed"), &GDHover::set_speed);
 
+
 	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "amplitude"), "set_amplitude", "get_amplitude");
 	ADD_PROPERTY(PropertyInfo(Variant::FLOAT, "speed", PROPERTY_HINT_RANGE, "0,20,0.01"), "set_speed", "get_speed");
+
+
+	// To react to a signal: some_other_node->connect("the_signal", Callable(this, "my_method"));
+
+	// emit a signal
+	ADD_SIGNAL(MethodInfo("position_changed", PropertyInfo(Variant::OBJECT, "node"), PropertyInfo(Variant::VECTOR2, "new_pos")));
 }
 
 GDHover::GDHover() {
 	// Initialize any variables here
 	time_passed = 0.0;
-	amplitude = 10.0;
+	amplitude = 15.0;
 	speed = 1.0;
 }
 
@@ -36,6 +43,13 @@ void GDHover::_process(double delta) {
 	);
 
 	set_position(new_position);
+
+	time_emit += delta;
+	if (time_emit > 1.0) {
+		emit_signal("position_changed", this, new_position); // emit a signal every second
+
+		time_emit = 0.0; // reset the counter after signal emit
+	}
 }
 
 void GDHover::set_amplitude(const double p_amplitude) {

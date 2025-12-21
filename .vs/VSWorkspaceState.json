@@ -8,9 +8,7 @@
   "ExpandedNodes": [
     "",
     "\\demo",
-    "\\demo\\bin",
-    "\\demo\\bin\\windows",
-    "\\src"
+    "\\demo\\bin"
   ],
   "PreviewInSolutionExplorer": false
 }

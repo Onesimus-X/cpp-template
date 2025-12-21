@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://dh0oj81pufivs"]
+[gd_scene load_steps=4 format=3 uid="uid://dh0oj81pufivs"]
 
 [ext_resource type="Script" uid="uid://bkwk40ybs8kgm" path="res://example.gd" id="1_jdh55"]
 [ext_resource type="Texture2D" uid="uid://dbx66sovxd1" path="res://icon.svg" id="2_n51mc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n51mc"]
+size = Vector2(127, 127)
 
 [node name="Node" type="Node"]
 script = ExtResource("1_jdh55")
@@ -11,3 +14,15 @@ amplitude = 40.0
 speed = 2.0
 texture = ExtResource("2_n51mc")
 centered = false
+
+[node name="MyPlayer" type="MyPlayer" parent="."]
+position = Vector2(-1.6666718, -5.0000014)
+
+[node name="Sprite2D" type="Sprite2D" parent="MyPlayer"]
+texture = ExtResource("2_n51mc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MyPlayer"]
+position = Vector2(0.5, 1.5)
+shape = SubResource("RectangleShape2D_n51mc")
+
+[connection signal="position_changed" from="GDHover" to="." method="_on_gd_hover_position_changed"]
